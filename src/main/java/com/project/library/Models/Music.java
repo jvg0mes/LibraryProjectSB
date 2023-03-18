@@ -32,5 +32,4 @@ public class Music {
     @Enumerated(EnumType.STRING) @NotNull
     private eMusicGender gender;
 
-
 }

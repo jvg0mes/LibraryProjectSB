@@ -24,15 +24,15 @@ public class Customer {
 
     @Id @NotNull @NotEmpty @NotBlank
     @Pattern(regexp = "^\\d{3}\\.\\d{3}\\.\\d{3}\\-\\d{2}$")
-    String cpf;
+    private String cpf;
     @NotNull @NotEmpty @NotBlank
-    String name;
+    private String name;
     @NotNull
-    LocalDate birthDate;
+    private LocalDate birthDate;
     @NotNull
-    BigDecimal income;
+    private BigDecimal income;
     @NotNull
     @Enumerated(EnumType.STRING)
-    eGender gender;
+    private eGender gender;
 
 }
