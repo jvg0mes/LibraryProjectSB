@@ -32,4 +32,8 @@ public class Music {
     @Enumerated(EnumType.STRING) @NotNull
     private eMusicGender gender;
 
+    public String play(){
+        return "Tocando musica " + this.name;
+    }
+
 }

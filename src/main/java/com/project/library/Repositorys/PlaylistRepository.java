@@ -6,5 +6,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 public interface PlaylistRepository extends JpaRepository<Playlist,Integer> {
-    public List<Playlist> findAllByPublicAcess(Boolean publicAcess);
+    public List<Playlist> findAllByPublicAccess(Boolean publicAccess);
 }

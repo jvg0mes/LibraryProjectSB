@@ -7,7 +7,6 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,6 +26,16 @@ public class Playlist {
     private List<Integer> musics = new ArrayList<>();
     @NotNull
     private int ownerId;
-    private boolean publicAcess = false;
+    private boolean publicAccess = false;
 
+    @Override
+    public String toString() {
+        return "Playlist{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", musics=" + musics +
+                ", ownerId=" + ownerId +
+                ", publicAccess=" + publicAccess +
+                '}';
+    }
 }
